@@ -1,0 +1,16 @@
+print("Digite os números separados por espaços:")
+entrada = input()
+
+numeros = [int(n) for n in entrada.split()]
+
+maior = numeros[0]
+menor = numeros[0]
+
+for numero in numeros:
+    if numero > maior:
+        maior = numero
+    elif numero < menor:
+        menor = numero
+
+print("O maior número é:", maior)
+print("O menor número é:", menor)
